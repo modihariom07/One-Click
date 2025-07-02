@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>One Click</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ✅ Sidebar Toggle Button -->
+<div class="topbar">
+  <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+</div>
+
+
+
+  <!-- ✅ Sidebar Menu -->
+  <div id="sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">Login</a>
+    <a href="/Register.html">Register</a>
+    <a href="#">Contact</a>
+  </div>
+<a></a>
+
+  <header>
+    <div class="header-container">
+      <div class="site-title">
+        <h1>One Click Room Finder</h1>
+        <p>Find verified rooms across top Indian cities — no brokers, no scams.</p>
+      </div>
+       <div id="logo">
+        <img src="img/ONE CLICK.png">
+      </div>
+
+    </div>
+    
+
+  </header>
+
+  <section class="filters">
+    <select id="locationFilter" onchange="filterRooms()">
+      <option value="">City</option>
+      <option value="Pune">Pune</option>
+      <option value="Indore">Indore</option>
+      <option value="Bangalore">Bangalore</option>
+      <option value="Hyderabad">Hyderabad</option>
+      <option value="Delhi">Delhi</option>
+    </select>
+    <select id="budgetFilter" onchange="filterRooms()">
+      <option value="">Budget</option>
+      <option value="5000">Below ₹5,000</option>
+      <option value="10000">Below ₹10,000</option>
+      <option value="15000">Below ₹15,000</option>
+    </select>
+    <select id="ratingFilter" onchange="filterRooms()">
+      <option value="">Rating</option>
+      <option value="4">4★ & above</option>
+      <option value="3">3★ & above</option>
+    </select>
+  </section>
+
+  <section id="roomList" class="room-list"></section>
+
+  <footer>
+    <p>© 2025 One Click Rentals – A broker-free way to find your next room.</p>
+    <a href="#">Contact</a>
+    <a href="#">Help</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
