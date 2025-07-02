@@ -69,7 +69,8 @@ OneClickRoomFinder/
 
 **Hariom Modi**  
 Computer Science Engineer
-[https://linkedin.com/in/hariom-modi-236022264] [https://github.com/modihariom07](#)
+[https://linkedin.com/in/hariom-modi-236022264] 
+[https://github.com/modihariom07]
 
 ---
 
